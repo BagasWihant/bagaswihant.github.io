@@ -12,34 +12,92 @@
 </head>
 <body>
 
-<nav class="navbar navbar-dark bg-dark">
-<a href="#" class="navbar-brand">
-<img src="fotoku.png" class="rounded-circle" width="40" height="40">
-Bagas Wihant
-</a>
-<div class="form-inline">
-<button class="btn btn-danger mr-3" data-toggle="modal" data-target="#formdaftar">Daftar</button>
-<button class="btn btn-info" data-toggle="modal" data-target="#formlogin">Login</button>
-</div>
-</nav>
 
-<div id="formlogin" class="modal fade" role="dialog" tabindex="-1">
-<div class="modal-dialog" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<h5>Login</h5>
-</div>
-<div class="modal-body">
-USERNAME <input type="text" name="user" id=""><p>
-PASSWORD <input type="text" name="user" id=""><p>
-</div>
-<div class="modal-footer">
-    <a href="admin.html">
-        <button class="btn btn-outline-secondary">MASUK</button></a>
-</div>
-</div>
-</div>
-</div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bagas Wihantoro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-bold" href="#">HOME </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link  font-weight-bold" href="#">DAFTAR</a>
+                    </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link font-weight-bold" href="#" data-toggle="modal" data-target="#formlogin">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="formlogin" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Login</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label">Username</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="staticEmail" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" value="Masuk">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel slide" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/4.jpg" alt="pertama">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h1 class="display-4 font-weight-bold ">Persediaan Barang</h1>
+                    <p class="lead font-weight-bold">Digunakan untuk melihat barang yang ada.</p>
+                    <p class="lead">
+                        <a class="tbl-ungu btn-lg" href="#" role="button">Baca lebih lanjut</a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img class="d-block w-100" src="img/2.jpg" alt="kedua">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h1 class="display-4 font-weight-bold ">Penjualan Barang</h1>
+                    <p class="lead font-weight-bold">Digunakan untuk menjual barang yang ada.</p>
+                    <p class="lead">
+                        <a class="tbl-pink btn-lg" href="#" role="button">Baca lebih lanjut</a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img class="d-block w-100" src="img/3.jpg" alt="ketiga">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h1 class="display-4 font-weight-bold ">Pembelian Barang</h1>
+                    <p class="lead text-white font-weight-bold">Digunakan untuk membeli barang yang habis.</p>
+                    <p class="lead">
+                        <a class="tbl-ungu btn-lg" href="#" role="button">Baca lebih lanjut</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
