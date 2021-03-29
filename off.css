@@ -31,6 +31,8 @@
 }
 .carousel-item img{
     filter: brightness(40%);
+    max-width:100%;
+    height:auto;
 }
 .display-4{
     vertical-align: top;
